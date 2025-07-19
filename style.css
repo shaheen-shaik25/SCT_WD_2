@@ -1,0 +1,80 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Animated Gradient Background */
+body {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradientBG 12s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 30px 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  color: white;
+  backdrop-filter: blur(10px);
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+#display {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.buttons {
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 0 8px;
+  border: none;
+  border-radius: 8px;
+  background-color: rgba(255,255,255,0.3);
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: rgba(255,255,255,0.5);
+}
+
+#laps {
+  list-style-type: none;
+  max-height: 200px;
+  overflow-y: auto;
+  text-align: left;
+}
+
+#laps li {
+  padding: 5px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
